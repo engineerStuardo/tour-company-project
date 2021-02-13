@@ -68,10 +68,58 @@ p {
 a {
   text-decoration: none;
 }
-
 /* more global styles */
+.btn_white {
+  text-transform: uppercase;
+  letter-spacing: var(--mainSpacing);
+  color: var(--mainWhite);
+  border: 2px solid var(--mainWhite);
+  padding: 0.9rem 1.6rem;
+  display: inline-block;
+  transition: var(--mainTansition);
+}
+.btn_white:hover {
+  background: var(--mainWhite);
+  color: var(--primaryColor);
+}
 /* end of global styles */
 /* navbar */
 /* end of navbar */
 /* hero */
+.hero {
+  min-height: 100vh;
+  background: var(--primaryColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero_banner {
+  text-align: center;
+  color: var(--mainWhite);
+  padding: 0 2rem;
+}
+.hero_title {
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  letter-spacing: 0.4rem;
+}
+.hero_text {
+  width: 85%;
+  margin: 0 auto;
+  letter-spacing: var(--mainSpacing);
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+@media screen and (min-width: 720px) {
+  .hero {
+    background: linear-gradient(rgba(63, 208, 212, 0.7), rgba(0, 0, 0, 0.7)),
+      url('../images//main.jpeg') center/cover fixed no-repeat;
+  }
+  .hero_title {
+    font-size: 4.5rem;
+  }
+  .hero_text {
+    width: 70%;
+  }
+}
 /* end of hero */

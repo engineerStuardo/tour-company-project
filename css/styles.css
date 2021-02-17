@@ -28,7 +28,7 @@
 body {
   font-family: 'Lato', sans-serif;
   color: var(--mainBlack);
-  background: var(--mainWhite);
+  background: var(--offWhite);
   line-height: 1.4;
   font-size: 1rem;
 }
@@ -200,3 +200,57 @@ a {
   }
 }
 /* end of about section */
+/* services section */
+.service {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.service_icon {
+  background: var(--primaryColor);
+  padding: 0.5rem;
+  display: inline-block;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+.service_title {
+  text-transform: uppercase;
+}
+.service_text {
+  width: 80%;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+@media screen and (min-width: 576px) {
+  .services_center {
+    display: flex;
+    /* after */
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .service {
+    flex: 0 0 calc(50% - 1rem);
+  }
+}
+@media screen and (min-width: 992px) {
+  .service {
+    flex: 0 0 calc(33.3333% - 1rem);
+  }
+}
+@media screen and (min-width: 1170px) {
+  .service {
+    display: flex;
+    text-align: left;
+  }
+  .service_icon {
+    align-self: flex-start;
+  }
+  .service_info {
+    padding-left: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .service_text {
+    width: 90%;
+    margin: 0;
+  }
+}
+/* end of services section */

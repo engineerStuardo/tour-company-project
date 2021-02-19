@@ -120,7 +120,7 @@ a {
 /* end of navbar */
 /* hero */
 .hero {
-  min-height: 100vh;
+  min-height: calc(100vh - 62px);
   background: var(--primaryColor);
   display: flex;
   justify-content: center;
@@ -483,6 +483,14 @@ a {
   background: var(--darkGrey);
   padding-left: 2.5rem;
 }
+.nav_links {
+  height: 0;
+  overflow: hidden;
+  transition: var(--mainTansition);
+}
+.show_links {
+  height: 271.43px;
+}
 @media screen and (min-width: 992px) {
   .nav_toggle {
     display: none;
@@ -531,3 +539,14 @@ a {
   }
 }
 /* end of navbar */
+/* fixed navbar */
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--mainGrey);
+  transition: var(--mainTansition);
+  box-shadow: var(--lightShadow);
+  z-index: 1;
+}

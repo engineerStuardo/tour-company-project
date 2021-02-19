@@ -14,12 +14,14 @@
     <link rel="stylesheet" href="./css/styles.css" />
     <!-- favicon -->
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <!-- Custom JavaScript -->
+    <script src="./js/app.js" defer></script>
   </head>
   <body>
     <!-- header -->
     <header id="home">
       <!-- navbar -->
-    <nav class="navbar">
+    <nav class="navbar ">
       <div class="nav_center">
         <!-- nav header -->
         <div class="nav_header">
@@ -31,11 +33,11 @@
         <!-- end of nav header -->
         <!-- nav links -->
         <div class="nav_links" id="nav_links">
-          <a href="#home" class="nav_link">home</a>
-          <a href="#about" class="nav_link">about</a>
-          <a href="#services" class="nav_link">services</a>
-          <a href="#featured" class="nav_link">featured</a>
-          <a href="#gallery" class="nav_link">gallery</a>
+          <a href="#home" class="nav_link scroll_link">home</a>
+          <a href="#about" class="nav_link scroll_link">about</a>
+          <a href="#services" class="nav_link scroll_link">services</a>
+          <a href="#featured" class="nav_link scroll_link">featured</a>
+          <a href="#gallery" class="nav_link scroll_link">gallery</a>
         </div>
         <!-- end of nav links -->
         <!-- nav social icons -->
@@ -49,7 +51,7 @@
           <a href="https://www.facebook.com target="_blank" class="nav_icon"
             ><i class="fab fa-squarespace"></i
           ></a>
-      </div>
+        </div>
         <!-- end of nav social icons -->
       </div>
     </nav>
@@ -62,7 +64,7 @@
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum
             veniam dicta deserunt.
           </p>
-          <a href="#featured" class="btn_white">explore tours</a>
+          <a href="#featured" class="btn_white scroll_link">explore tours</a>
         </div>
       </div>
       <!-- end of hero component -->
@@ -430,7 +432,7 @@
       <!-- end of footer icons -->
       <!-- copyright -->
       <p class="copyright">
-        copyright &copy; backroads travel tours company <span id="date">2021</span>. all rights reserved
+        copyright &copy; backroads travel tours company <span id="date"></span>. all rights reserved
       </p>
       <!-- end of copyright -->
     </footer>
